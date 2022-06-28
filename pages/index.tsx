@@ -5,7 +5,7 @@ import devIcon from "../public/dev-icon.png";
 import Image from 'next/image';
 import { useState } from 'react';
 
-const roles: Array<string> = ['Software Engineer', 'Product Manager', 'Data Analayst']
+const roles: Array<string> = ['Software Engineer', 'Product Manager', 'Data Analyst']
 const Bullet = () => <Box h='2' w='2' bg='brand.lightBlue' borderRadius={'50'}></Box>
 const getRandomColor = () => `#${Math.floor(Math.random()*16777215).toString(16)}`
 
