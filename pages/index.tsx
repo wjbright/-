@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         <main>
           <VStack>
             <Image src={devIcon} alt='dev icon' style={{filter: 'brightness(0) invert(1)'}}/>
-            <Heading as='h2' size={'2xl'} color={'brand.lightBlue'}>Bright Williams</Heading>
+            <Heading as='h2' size={'2xl'} color={'brand.lightBlue'}>queen</Heading>
             <HStack pt='6'>{renderRoles(roles, hoverColor, setHoverColor)}</HStack>
           </VStack>
         </main>
