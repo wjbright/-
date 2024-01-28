@@ -9,10 +9,10 @@ import logoGamp from '@/images/logos/gamp.svg'
 
 const projects = [
   {
-    name: 'Squeue',
+    name: 'Solana Giffer',
     description:
-      'Creating technology to empower users to explore queue on their own terms.',
-    link: { href: 'https://github.com/wjbright/squeue', label: 'github.com' },
+      'Created a web3 Dapp to allow anyone to store their favorite GIFs on the Solana block chain',
+    link: { href: 'https://solana-giffer.netlify.app/', label: 'Giffer' },
     logo: logoDestree,
   },
   {
@@ -52,7 +52,8 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="Little projects I have built to make the world better."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of."
+      intro="I’ve worked on tons of little projects over the years but
+       these are the ones that I’m most proud of that I can make public."
     >
       <ul
         role="list"

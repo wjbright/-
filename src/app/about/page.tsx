@@ -55,15 +55,15 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <Container className="mt-16 sm:mt-32">
+    <Container className="mt-10 lg:mt-20">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
               src={portraitImage}
-              alt=""
+              alt="An image of Bright williams"
               sizes="(min-width: 1024px) 32rem, 20rem"
-              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              className="hidden lg:block aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
           </div>
         </div>
@@ -81,10 +81,12 @@ export default function About() {
             significantly growing our customer base and enhancing our product performance.
             </p>
             <p>
-            My experience extends to working as an independent contractor with a focus on MVP development and data analysis, 
-            where I&rsquo;ve successfully executed projects with notable efficiency and creativity. 
-            My academic background in technology entrepreneurship and design complements my practical experience, 
-            allowing me to approach problems with a unique blend of technical expertise and strategic thinking.
+            
+            Over the last 6 years, I&rsquo;ve worked in the logistics, finance, and
+            B2B retail industry building hardware and software to make them better. 
+            One product at a time; one company at a time. 
+            I haven&rsquo;t been successful with all of them but I do have a lot of stories to tell from them.
+            Take them as my badges of honor! Haha! But I definitely have tasted success in quite a number of my ventures.
             </p>
             <p>
             What sets me apart is my ability to lead with empathy, 
@@ -92,7 +94,7 @@ export default function About() {
             My achievements, including winning the Facebook Accelerator and securing significant grants, 
             are a testament to my commitment to excellence and innovation. 
             I&rsquo;m enthusiastic about leveraging my skills in new environments and 
-            contributing to projects that have a real impact on people&rsquo;s lives
+            contributing to projects that have a real impact on people&rsquo;s lives.
             </p>
           </div>
         </div>
@@ -102,13 +104,13 @@ export default function About() {
               Follow on Twitter
             </SocialLink>
             <SocialLink href="https://www.instagram.com/_wjbright?igsh=MnZ1Nmg0dDdrMmI1" icon={InstagramIcon} className="mt-4">
-              Follow on Instagram
+              Find me on Instagram
             </SocialLink>
             <SocialLink href="https://github.com/wjbright" icon={GitHubIcon} className="mt-4">
               Follow on GitHub
             </SocialLink>
             <SocialLink href="https://www.linkedin.com/in/bright-williams/" icon={LinkedInIcon} className="mt-4">
-              Follow on LinkedIn
+              Connect with me on LinkedIn
             </SocialLink>
             <SocialLink
               href="mailto:brightasima@gmail.com"

@@ -207,10 +207,6 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      {/* <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button> */}
     </div>
   )
 }
@@ -257,9 +253,9 @@ export default async function Home() {
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
               src={cartoonImage}
-              alt=""
+              alt="A cartoon image of Bright"
               sizes="(min-width: 1024px) 32rem, 20rem"
-              className="h-[150] w-[150] aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              className=" hidden lg:block h-[150] w-[150] aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
           </div>
         </div>
@@ -269,7 +265,7 @@ export default async function Home() {
      
       
       {/* Importing the articles */}
-      <Container className="mt-20 md:mt-28">
+      <Container className="mt-10 md:mt-10">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             {articles.map((article) => (
