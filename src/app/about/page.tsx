@@ -74,7 +74,7 @@ export default function About() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
             I am Bright Williams, a dedicated professional with a diverse background in software engineering,
-             product management, and data analysis. My journey in tech began with my role as a software engineer, 
+             product management, and data analysis. My journey began with my role as a software engineer, 
              where I played a pivotal role in developing core features and systems for early-stage products. 
              As a co-founder and head of product & engineering at MyStash Inc, 
              I led product teams to build innovative solutions, 
