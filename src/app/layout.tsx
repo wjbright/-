@@ -27,6 +27,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+      <head>
+        <script
+          defer
+          data-domain="wjbright.com"
+          src="https://plausible.io/js/script.js"
+        ></script>
+      </head>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
         <Providers>
           <div className="flex w-full">
