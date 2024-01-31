@@ -11,6 +11,7 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
+import dayjs from 'dayjs'
 
 function SocialLink({
   className,
@@ -50,10 +51,13 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'I’m Bright Williams. I live in Lagos, Nigeria, where I build for the world.',
+    'Bright Williams personal bio. Software engineer, and 2x founder',
 }
 
 export default function About() {
+  const career_start_date = dayjs("2017-08-01")
+  const professional_years_count = dayjs().diff(career_start_date, 'years')
+  
   return (
     <Container className="mt-10 lg:mt-20">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -69,32 +73,33 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-           A dynamic Software Engineer and Product Manager with a flair for data-driven user friendly products. 
+           A Software Engineer with an eye for delivering wholesome value quickly to users.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-            I am Bright Williams, a dedicated professional with a diverse background in software engineering,
-             product management, and data analysis. My journey began with my role as a software engineer, 
-             where I played a pivotal role in developing core features and systems for early-stage products. 
-             As a co-founder and head of product & engineering at MyStash Inc, 
-             I led product teams to build innovative solutions, 
-            significantly growing our customer base and enhancing our product performance.
+            Hi 👋🏽, I am Bright Williams, a dedicated professional with a diverse background in software engineering,
+             product management, and data analysis. My journey into technology started because I had a simple yet challenging goal of 
+             building an "Uber for Trucks" web platform as my final year project at my undergrad 
+             with less than a years worth of experience learning software engineering. 
+             I did it! And it changed my life.
             </p>
             <p>
-            
-            Over the last 6 years, I&rsquo;ve worked in the logistics, finance, and
+            {`Over the last ${professional_years_count} years, I've worked in the logistics, finance, and
             B2B retail industry building hardware and software to make them better. 
             One product at a time; one company at a time. 
-            I haven&rsquo;t been successful with all of them but I do have a lot of stories to tell from them.
-            Take them as my badges of honor! Haha! But I definitely have tasted success in quite a number of my ventures.
+            I haven't been successful with all of them but I do have a lot of stories to tell from them.
+            Take them as my badges of honor! Haha! But I definitely have tasted success in quite a number of my ventures.`}
             </p>
             <p>
             What sets me apart is my ability to lead with empathy, 
-            think critically, and adapt quickly to new challenges. 
-            My achievements, including winning the Facebook Accelerator and securing significant grants, 
-            are a testament to my commitment to excellence and innovation. 
-            I&rsquo;m enthusiastic about leveraging my skills in new environments and 
-            contributing to projects that have a real impact on people&rsquo;s lives.
+            think critically, adapt quickly to new challenges, and just get things done no matter how tough it gets. 
+            I am winner of the Facebook Accelerator grant, as well as the Tony Elumelu Foundation grant. A post-grad scholar of the Nigerian
+            University of Technology and Management where I studied Entreprenuership, Technology and Design. A graduate of the Federal
+            University of Technology, Akure, where I studied Transport Management Technology.
+            </p>
+            <p>
+              In my free time I play chess (still under 2100 on lichess haha) and play the guitar. Oh, and I am in love with Jesus Christ,
+              my personal Lord and saviour. Ask me about Him sometime 🙂
             </p>
           </div>
         </div>

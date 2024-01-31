@@ -1,13 +1,13 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/image'
-import designSystem from './planetaria-design-system.png'
+import trpcDemo from './trpc-demo.gif'
 
 export const article = {
   author: 'Bright Williams',
   date: '2024-01-28',
-  title: 'My thoughts on TRPC',
+  title: 'tRPC!!!',
   description:
-    'An AI-generated article as a placeholder for technical articles to be written later',
+    'You probably should be using tRPC if you want to move fast',
 }
 
 export const metadata = {
@@ -18,19 +18,23 @@ export const metadata = {
 export default (props) => <ArticleLayout article={article} {...props} />
 
 tRPC, short for TypeScript RPC, is a modern development tool designed for building typesafe APIs easily. 
-It leverages TypeScript to enable end-to-end type safety from the client to the server, 
-eliminating the need for manual type definitions. 
+It leverages TypeScript to enable end-to-end type safety from the client to the server. You can see it in action with
+the GIF below.
 
-<Image src={designSystem} alt="" />
+<Image src={trpcDemo} alt="trpc demo from trpc.io landing page" />
 
-To get started with tRPC, you first need a basic understanding of TypeScript and Node.js. 
-Installation involves setting up a new Node.js project and installing tRPC and its dependencies. 
-Developers can then define procedures on the server and use them on the client with automatic type inference. 
+The number one reason I would recommend tRPC is speed! You save tremendous amount of time when your client and server share the same types.
+You break things quickly, and fix them right away because you know what code broke it. Debugging is a whole lot faster! And the great part is,
+it is really easy to setup. 
+
+You don't need to learn or configure any complex new technology to get your server running. You just need to know how to write functions.
+The learning curve is so flat that even junior developers can easily onboard, start writing functions and building features end-to-end with a basic understanding of
+typescript and your business usecase.
 
 ## Setup and Installation
 
-tRPC's simplicity and type safety make it a popular choice for developers looking to streamline their API development process. 
-For detailed guidance,the official [tRPC documentation](https://trpc.io/) offers comprehensive resources and examples.
+tRPC's simplicity and type safety have made it really popular amongst developers looking to streamline their API development process. 
+For detailed guidance, you should always check the official [tRPC documentation](https://trpc.io/) which is more comprehensive and has resources and examples. But here's a quick sneak peak.
 
 
 ```js
@@ -76,8 +80,10 @@ const server = createHTTPServer({
 server.listen(3000);
 ```
 
-## Advantages of TRPC
-The advantages of tRPC (TypeScript RPC) include:
+This is a short version. But it will do the trick. Depending on your client framework, all you then need to do is call your appRouter on the client side and access
+each of those procedures. 
+
+## More reasons why you should be using TRPC in your next project
 
 1. End-to-End Type Safety: tRPC ensures type safety across the entire stack, from the server to the client, significantly reducing the risk of runtime errors related to data types.
 
@@ -92,4 +98,4 @@ The advantages of tRPC (TypeScript RPC) include:
 6. Flexible and Lightweight: tRPC is adaptable to various use cases and works seamlessly with existing tools and frameworks in the TypeScript ecosystem. It's also lightweight, adding minimal overhead to projects.
 
 
-These benefits make tRPC a powerful tool for TypeScript developers seeking efficiency and reliability in building APIs.
+If these don't convince you, just reach out to me. We can have a full blown debate about it :)
