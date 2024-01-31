@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 export default function About() {
   const career_start_date = dayjs("2017-08-01")
   const professional_years_count = dayjs().diff(career_start_date, 'years')
-  
+
   return (
     <Container className="mt-10 lg:mt-20">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -73,33 +73,33 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-           A Software Engineer with an eye for delivering wholesome value quickly to users.
+            A Software Engineer with an eye for delivering wholesome value quickly to users.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-            Hi 👋🏽, I am Bright Williams, a dedicated professional with a diverse background in software engineering,
+              {`Hi 👋🏽, I am Bright Williams, a dedicated professional with a diverse background in software engineering,
              product management, and data analysis. My journey into technology started because I had a simple yet challenging goal of 
              building an "Uber for Trucks" web platform as my final year project at my undergrad 
              with less than a years worth of experience learning software engineering. 
-             I did it! And it changed my life.
+             I did it! And it changed my life.`}
             </p>
             <p>
-            {`Over the last ${professional_years_count} years, I've worked in the logistics, finance, and
+              {`Over the last ${professional_years_count} years, I've worked in the logistics, finance, and
             B2B retail industry building hardware and software to make them better. 
             One product at a time; one company at a time. 
             I haven't been successful with all of them but I do have a lot of stories to tell from them.
             Take them as my badges of honor! Haha! But I definitely have tasted success in quite a number of my ventures.`}
             </p>
             <p>
-            What sets me apart is my ability to lead with empathy, 
-            think critically, adapt quickly to new challenges, and just get things done no matter how tough it gets. 
-            I am winner of the Facebook Accelerator grant, as well as the Tony Elumelu Foundation grant. A post-grad scholar of the Nigerian
-            University of Technology and Management where I studied Entreprenuership, Technology and Design. A graduate of the Federal
-            University of Technology, Akure, where I studied Transport Management Technology.
+              {`What sets me apart is my ability to lead with empathy,
+              think critically, adapt quickly to new challenges, and just get things done no matter how tough it gets.
+              I am winner of the Facebook Accelerator grant, as well as the Tony Elumelu Foundation grant. A post-grad scholar of the Nigerian
+              University of Technology and Management where I studied Entreprenuership, Technology and Design. A graduate of the Federal
+              University of Technology, Akure, where I studied Transport Management Technology.`}
             </p>
             <p>
-              In my free time I play chess (still under 2100 on lichess haha) and play the guitar. Oh, and I am in love with Jesus Christ,
-              my personal Lord and saviour. Ask me about Him sometime 🙂
+              {`In my free time I play chess (still under 2100 on lichess haha) and play the guitar. Oh, and I am in love with Jesus Christ,
+              my personal Lord and saviour. Ask me about Him sometime 🙂`}
             </p>
           </div>
         </div>
