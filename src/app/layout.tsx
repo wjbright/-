@@ -1,4 +1,5 @@
 import { type Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
@@ -11,8 +12,7 @@ export const metadata: Metadata = {
     default:
       'Bright Williams - Software Engineer, Product Manager, and Data Analyst',
   },
-  description:
-    'I’m Bright, a software engineer based in lagos Nigeria',
+  description: 'I’m Bright, a software engineer based in lagos Nigeria',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
@@ -33,6 +33,7 @@ export default function RootLayout({
             <Layout>{children}</Layout>
           </div>
         </Providers>
+        <Analytics />
       </body>
     </html>
   )
