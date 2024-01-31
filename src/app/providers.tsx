@@ -48,7 +48,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
     <AppContext.Provider value={{ previousPathname }}>
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ThemeWatcher />
-        {children}
+          {children}
       </ThemeProvider>
     </AppContext.Provider>
   )
