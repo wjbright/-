@@ -5,15 +5,15 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoDestree from '@/images/logos/deestree.svg'
 import logoMystash from '@/images/logos/mystash.svg'
-import logoGamp from '@/images/logos/gamp.svg'
+import googleMeetMute from '@/images/logos/ext-icon.png'
 
 const projects = [
   {
-    name: 'Solana Giffer',
+    name: 'Google Meet Mute',
     description:
-      'Created a web3 Dapp to allow anyone to store their favorite GIFs on the Solana block chain',
-    link: { href: 'https://solana-giffer.netlify.app/', label: 'Giffer' },
-    logo: logoDestree,
+      'A chrome extension to mute any google meet audio or video from any browser tab or application window',
+    link: { href: 'https://chromewebstore.google.com/detail/google-meet-mute/ahjnadcflanohpeeddcclfibiiipfpli', label: 'Google Meet Mute' },
+    logo: googleMeetMute,
   },
   {
     name: 'Paystack-Library',
@@ -22,14 +22,6 @@ const projects = [
     link: { href: 'https://github.com/wjbright/paystack', label: 'github.com' },
     logo: logoMystash,
   },
-  {
-    name: 'Art-Tok',
-    description:
-      'Real-time video streaming library, built with Javascript.',
-    link: { href: 'https://github.com/wjbright/art-tok', label: 'github.com' },
-    logo: logoGamp,
-  },
- 
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
